@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <title>Screen Record</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="./render.js"></script>
   </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+  <body class="container">
+    <div class="header">⚡ Electron Screen Recorder</div>
+
+    <video></video>
+
+    <div class="controller">
+      <button id="startBtn" class="button is-primary">Start</button>
+      <button id="stopBtn" class="button is-warning">Stop</button>
+    </div>
+
+    <button id="videoSelectBtn" class="button is-text">Choose a Video Source</button>
+    <button id="formatSelectBtn" class="button is-text">Choose Output Format</button>
   </body>
 </html>
